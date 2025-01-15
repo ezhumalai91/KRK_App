@@ -213,15 +213,27 @@ h6 {
 }
 
 .header .logo h1 {
-  font-size: 26px;
+  font-size: 24px;
   padding: 0 0 0 8px;
   margin: 11px 0;
   line-height: 1;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   border-left: 8px solid var(--accent-color);
 }
+
+@media only screen and (max-width: 768px) {
+  .header .logo h1 {
+    font-size: 18px;
+    padding: 0 0 0 8px;
+    margin: 11px 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-left: 8px solid var(--accent-color);
+  }}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -804,7 +816,10 @@ section,
   .hero .carousel {
     min-height: 100vh;
   }
+
 }
+
+
 
 .hero img {
   position: absolute;
